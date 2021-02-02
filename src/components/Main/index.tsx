@@ -1,21 +1,13 @@
-import * as Style from './styles'
+import QuizBackground from '../QuizBackground'
+import GitHubCorner from '../GitHubCorner'
+import strings from '../../utils/strings'
 
-const Main = ({
-  title = 'React Avançado - Boilerplate',
-  description = 'TypeScript, ReactJS, NextJS, Storybook and Styled Components in the same project',
-}) => (
-  <Style.Wrapper>
-    <Style.Logo
-      src="/img/logo.svg"
-      alt="Imagem de um átomo e React Avançado escrito ao lado."
-    />
-    <Style.Title>{title}</Style.Title>
-    <Style.Description>{description}</Style.Description>
-    <Style.Illustration
-      src="/img/hero-illustration.svg"
-      alt="Um desenvolvedor de frente para uma tela com código."
-    />
-  </Style.Wrapper>
+const Main = () => (
+  <QuizBackground backgroundImage={strings.bg}>
+    {/* <QuizContainer showExpandedImage={true}>
+    </QuizContainer> */}
+    <GitHubCorner projectUrl="https://github.com/CarlosRafael22/NeyQuiz" />
+  </QuizBackground>
 )
 
 export default Main
