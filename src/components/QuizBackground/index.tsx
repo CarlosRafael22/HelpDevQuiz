@@ -7,6 +7,7 @@ type QuizBackgroundProps = {
 
 const QuizBackground = styled.div<QuizBackgroundProps>`
   width: 100%;
+  height: 100%;
   background-size: cover;
   background-position: center;
   background-image: url(${({ backgroundImage }) => backgroundImage ? backgroundImage : strings.bg });

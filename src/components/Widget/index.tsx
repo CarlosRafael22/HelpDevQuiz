@@ -11,8 +11,7 @@ import styled from 'styled-components'
 //  }
 
 const Widget: any = styled.div`
-  margin-top: 24px;
-  margin-bottom: 24px;
+  margin: 24px auto;
   border: 1px solid ${({ theme }) => theme.colors.primary};
   background-color: ${({ theme }) => {
     return theme.colors.mainBg;
