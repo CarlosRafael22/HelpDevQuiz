@@ -1,5 +1,5 @@
-import React from 'react'
 import styled from 'styled-components'
+import strings from '../../utils/strings'
 
 const Wrapper = styled.div`
   position: absolute;
@@ -32,10 +32,10 @@ const SVGWrapper = styled.svg`
 `
 
 type GitHubCornerProps = {
-    projectUrl: string
+    projectUrl?: string
 }
 
-export default function GitHubCorner({ projectUrl }: GitHubCornerProps) {
+export default function GitHubCorner({ projectUrl = strings.projectUrl }: GitHubCornerProps) {
   return (
     <Wrapper>
       <a href={projectUrl} target="_blank" rel="noreferrer">
