@@ -5,7 +5,7 @@ type OptionStyleProps = {
     chosen?: boolean
 }
 
-export const OptionStyle = styled.a<OptionStyleProps>`
+const OptionStyle = styled.a<OptionStyleProps>`
     display: block;
     border-radius: 0.5rem;
     background-color: ${({ theme, isCorrect }) => {
@@ -19,7 +19,7 @@ export const OptionStyle = styled.a<OptionStyleProps>`
 
     
     ${({ isCorrect }) => {
-        if (isCorrect === undefined) return css`
+        if (isCorrect === null) return css`
             cursor: pointer;
             &:hover,
             &:focus {
@@ -29,3 +29,5 @@ export const OptionStyle = styled.a<OptionStyleProps>`
     }}
     ${({ chosen }) => chosen && css`opacity: .5`}
 `
+
+export default OptionStyle
