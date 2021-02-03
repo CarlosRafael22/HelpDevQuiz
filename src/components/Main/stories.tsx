@@ -1,15 +1,9 @@
 import Main from '.'
-import { Story, Meta } from '@storybook/react/types-6-0'
+import { Story, Meta } from '@storybook/react'
 
 export default {
-  title: 'React Avancado/Main',
+  title: 'Main',
   component: Main,
 } as Meta
 
 export const Default: Story = (args) => <Main {...args} />
-
-export const WithProps = Default.bind({})
-WithProps.args = {
-  title: 'Hello',
-  description: 'Description',
-}
