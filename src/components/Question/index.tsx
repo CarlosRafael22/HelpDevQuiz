@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import Widget from '../Widget'
-import { OptionStyle } from './styles'
+import OptionStyle from '../Option'
 import Image from '../Image'
 // import Animation from '../Animation'
 

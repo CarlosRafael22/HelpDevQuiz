@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useRouter } from 'next/router'
 import { QuizBackground, QuizContainer, Question, Widget } from '../index'
 import questions from '../../utils/questions'
-import { OptionStyle } from '../Question/styles'
+import OptionStyle from '../Option'
 import ButtonStyle from '../Button'
 
 type QuizReviewProps = {
