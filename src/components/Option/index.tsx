@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 
-type OptionStyleProps = {
+export type OptionStyleProps = {
     isCorrect: boolean | null,
     chosen?: boolean
 }
